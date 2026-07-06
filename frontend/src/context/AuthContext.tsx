@@ -27,7 +27,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const getApiUrl = (path: string) => {
     // Connect to backend port (8000)
     const cleanPath = path.startsWith('/') ? path.substring(1) : path;
-    return `http://localhost:8000/${cleanPath}`;
+    return `https://paperpilot-vdow.onrender.com/${cleanPath}`;
   };
 
   const apiFetch = async (urlPath: string, options: RequestInit = {}) => {
